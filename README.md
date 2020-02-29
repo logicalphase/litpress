@@ -16,6 +16,8 @@ or
 ```
 yarn install && yarn run start
 ```
+### Configuring your site
+This repo currently uses WordPress.org example posts as it's source WP-REST API. You can use this for development purposes, but you'll no doubt wan to connect to your own WordPress instance. The `/src/components/config.js` is a simple configuration file to set yours up. Refer to https://developer.wordpress.org/rest-api/ for additional methods including more advanced features such as using secured authentication and other information you'll find helpful.
 
 Please refer to Polymer Documentation at https://www.polymer-project.org/ for information on lit-element, lit-html, and PWA Starter Kit for reference.
 
