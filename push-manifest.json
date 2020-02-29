@@ -1,0 +1,44 @@
+{
+  "/": {
+    "src/components/lp-app.js": {
+      "type": "script",
+      "weight": 1
+    },
+    "src/components/lp-home.js": {
+      "type": "script",
+      "weight": 1
+    },
+    "node_modules/@webcomponents/webcomponentsjs/webcomponenlp-loader.js": {
+      "type": "script",
+      "weight": 1
+    }
+  },
+  "/blog": {
+    "src/components/lp-app.js": {
+      "type": "script",
+      "weight": 1
+    },
+    "src/components/lp-blog.js": {
+      "type": "script",
+      "weight": 1
+    },
+    "node_modules/@webcomponents/webcomponentsjs/webcomponenlp-loader.js": {
+      "type": "script",
+      "weight": 1
+    }
+  },
+  "/article": {
+    "src/components/lp-app.js": {
+      "type": "script",
+      "weight": 1
+    },
+    "src/components/lp-article.js": {
+      "type": "script",
+      "weight": 1
+    },
+    "node_modules/@webcomponents/webcomponentsjs/webcomponenlp-loader.js": {
+      "type": "script",
+      "weight": 1
+    }
+  }
+}

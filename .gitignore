@@ -1,0 +1,30 @@
+## Security
+cert.pem
+key.pem
+
+## editors
+/.idea
+/.vscode
+
+## system files
+.DS_Store
+
+## npm yarn
+/node_modules/
+/npm-debug.log
+yarn-error.log
+yarn.lock
+
+## testing
+/coverage/
+test/integration/screenshots-current
+local.log
+
+## temp folders
+/.tmp/
+
+# build
+/_site/
+/dist/
+/build/
+/public/

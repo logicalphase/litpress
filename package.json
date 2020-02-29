@@ -1,0 +1,78 @@
+{
+  "name": "litpress",
+  "version": "0.9.1",
+  "contributors": [
+    "Polymer",
+    "Logical Phase LLC"
+  ],
+  "license": "MIT",
+  "repository": "hyperpress/litpress",
+  "scripts": {
+    "start": "es-dev-server --app-index index.html --hostname 192.168.1.45 --port 8803 --node-resolve --watch --open",
+    "start:compatibility": "es-dev-server --compatibility all --app-index index.html --node-resolve --watch --open",
+    "build": "rimraf dist && rollup -c rollup.config.js && workbox generateSW workbox-config.js",
+    "build:rollup": "rimraf && rollup -c && gulp generate-service-worker && gulp rollup-move ",
+    "test": "karma start --coverage",
+    "test:watch": "karma start --auto-watch=true --single-run=false",
+    "test:update-snapshots": "karma start --update-snapshots",
+    "test:prune-snapshots": "karma start --prune-snapshots",
+    "test:bs": "karma start karma.bs.config.js --coverage",
+    "lint:prettier": "prettier \"**/*.js\" --check --ignore-path .gitignore",
+    "format:prettier": "prettier \"**/*.js\" --write --ignore-path .gitignore"
+  },
+  "dependencies": {
+    "@open-wc/building-rollup": "0.21.1",
+    "@polymer/app-layout": "3.1.0",
+    "@polymer/polymer": "3.3.1",
+    "@power-elements/lazy-image": "2.2.0",
+    "date-fns": "2.10.0",
+    "lit-element": "2.2.1",
+    "pwa-helpers": "0.9.1",
+    "redux": "4.0.5",
+    "redux-thunk": "2.3.0",
+    "reselect": "4.0.0",
+    "rollup-plugin-modulepreload": "1.2.2"
+  },
+  "devDependencies": {
+    "@babel/core": "7.8.6",
+    "@babel/plugin-syntax-import-meta": "7.8.3",
+    "@babel/preset-env": "7.8.6",
+    "@open-wc/karma-esm": "2.13.10",
+    "@open-wc/prettier-config": "0.1.14",
+    "@open-wc/testing-karma-bs": "1.3.43",
+    "@polymer/test-fixture": "4.0.2",
+    "axe-core": "3.5.1",
+    "chai": "4.2.0",
+    "deepmerge": "4.2.2",
+    "del": "5.1.0",
+    "es-dev-server": "1.40.1",
+    "eslint": "6.8.0",
+    "eslint-config-google": "0.14.0",
+    "eslint-plugin-lit": "1.2.0",
+    "gulp": "4.0.2",
+    "gulp-rename": "2.0.0",
+    "gulp-replace": "1.0.0",
+    "http-server": "0.12.1",
+    "jshint": "2.11.0",
+    "karma": "4.4.1",
+    "mocha": "7.1.0",
+    "pixelmatch": "5.1.0",
+    "prettier": "1.19.1",
+    "prettier-eslint": "9.0.1",
+    "puppeteer": "2.1.1",
+    "rollup": "1.31.1",
+    "rollup-plugin-babel": "4.3.3",
+    "rollup-plugin-cpy": "2.0.1",
+    "rollup-plugin-minify-html-literals": "1.2.3",
+    "rollup-plugin-node-resolve": "5.2.0",
+    "rollup-plugin-terser": "5.2.0",
+    "wct-mocha": "1.0.1",
+    "workbox-build": "5.0.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint-config-prettier"
+    ]
+  },
+  "prettier": "@open-wc/prettier-config"
+}

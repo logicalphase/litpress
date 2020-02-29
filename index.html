@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="LitPress by Logical Phase">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+  <title>LitPress by Logical Phase</title>
+  <meta name="description" content="Making a better WordPress. Lightning fast, functionally superior, masters of self-defense.">
+
+  <base href="/">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link rel="preconnect" href="https://api.litpress.dev/" crossorigin>
+  <link rel="preconnect" href="https://twitter.com/" crossorigin>
+  <link rel="preconnect" href="https://facebook.com/" crossorigin>
+  
+  <link rel="icon" href="images/favicon.ico">
+
+  <!-- See https://goo.gl/OOhYW5 -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- See https://goo.gl/qRE0vM -->
+  <meta name="theme-color" content="#600060">
+
+  <!-- Add to homescreen for Chrome on Android. Fallback for manifest.json -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="LitPress by Logical Phase">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="LitPress by Logical Phase">
+
+  <!-- Homescreen icons -->
+  <link rel="apple-touch-icon" href="images/manifest/icon-48x48.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/manifest/icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="96x96" href="images/manifest/icon-96x96.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/manifest/icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="images/manifest/icon-192x192.png">
+
+  <!-- Tile icon for Windows 8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="images/manifest/icon-144x144.png">
+  <meta name="msapplication-TileColor" content="#600060">
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <!-- OG -->
+  <meta property="og:title" content="Digital Experience Services by Logical Phase">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Digital Experience Services by Logical Phase">
+  <meta property="og:image" content="https://storage.googleapis.com/logicalphase.com/assets/9a6ed0c3-bg-homepage-container.jpg" />
+
+  <!-- Default twitter cards -->
+  <meta name="twitter:title" content="Digital Experience Services by Logical Phase">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@jtteag">
+  <meta name="twitter:image" content="https://storage.googleapis.com/logicalphase.com/assets/9a6ed0c3-bg-homepage-container.jpg">
+
+  <script>
+    // Interim fix for constructable stylesheets being converted to 
+    // 'user agent stylesheet in Chrome Dev Tools - CSS inspector. This
+    // prevented styles from being editable in the inspector. Please see 
+    // https://bugs.chromium.org/p/chromium/issues/detail?id=946537 for details
+    //  
+    // This should be removed for production to avoid negative performance impact.
+    delete Document.prototype.adoptedStyleSheets;
+
+    // Load and register pre-caching Service Worker
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('service-worker.js', {
+          scope: '/',
+        });
+      });
+    }
+  </script>
+  <!-- Add any global styles for body, document, etc. -->
+  <style>
+    html {
+      background: #fff;
+    }
+    body {
+      margin: 0;
+      background: #fff;
+      color: #202124;
+      cursor: auto;
+      font-family: Roboto,Arial,Helvetica,sans-serif;
+      font-size: 1em;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 1.444;
+      margin: 0;
+      padding: 0;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+    }
+    lp-app[unresolved] {
+        display: block;
+        min-height: 101vh;
+        line-height: 66px;
+        text-align: center;
+        font-size: 1.1rem;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        padding: 0 16px;
+        overflow: visible;
+      }
+  </style>
+</head>
+
+<body class="full-width-page" data-navigation="dropdown">
+  <lp-app appTitle="Logical Phase" unresolved></lp-app>
+  <noscript>
+    <h1>JavaScript Appears to be Disabled</h1>
+    <p>This site uses modern JavaScript to help load faster and to provide you with the best interactive experience.</p> 
+    <p>Please enable JavaScript to view this website.</p>
+  </noscript>
+  <!-- <script install --devode_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js" as="script"></script> -->
+  <script preconnect type="module" src="src/components/lp-app.js" crossorigin></script>
+</body>
+
+</html>
